@@ -3,3 +3,10 @@
   banpe is "ban skype"
 
 * Description
+
+
+
+* TODO
+  # - skypeをkill
+  - 復活時間を引数で渡せるように
+  - 復活する
