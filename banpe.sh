@@ -6,15 +6,15 @@ then
     kill $id
 fi
 
-delay="1minute"
-# if [ $1 ];
-# then
-#     if [ $1 -lt 10 ];
-#     then
-#         delay="$1hour"
-#     else
-#         delay="$1minute"
-#     fi
-# fi
+delay="1hour"
+if [ $1 ];
+then
+    if [ $1 -lt 10 ];
+    then
+        delay="$1hour"
+    else
+        delay="$1minute"
+    fi
+fi
 echo $delay
-`echo "/usr/bin/skype" | at now + $delay`
+`echo 'DISPLAY=:0.0 skype' | at now+1minutes`
