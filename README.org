@@ -1,12 +1,13 @@
 
+
 * banpe
   banpe is "ban skype"
 
 * Description
 
 
-* HOWTO
-
+* HOW TO USE
+  sh banpe.sh
 
 
 * TODO
