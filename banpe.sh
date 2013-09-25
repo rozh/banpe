@@ -1,10 +1,5 @@
 #!/bin/sh
-id=`ps aux | grep skype | grep -v grep | tr -s ' ' | cut -d ' ' -f2`
-if [ $id ];
-then
-    # echo $id
-    kill $id
-fi
+python change_status.py
 
 delay="1hour"
 if [ $1 ];
@@ -17,4 +12,4 @@ then
     fi
 fi
 # echo $delay
-`echo 'DISPLAY=:0.0 skype' | at now+${delay}`
+echo 'python change_status.py 0' | at now+${delay}
