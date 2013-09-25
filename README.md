@@ -11,7 +11,7 @@ OS
 ===========
 * Ubuntu 12.04
 
-HOW TO USE
+How To Use
 ==========
 You will need Skype4Py and you can run this to install it.
 
@@ -21,6 +21,17 @@ You run this command and you can run banpe.
 
     sh banpe.sh
 
+And you can set time in this way. In this case, skype online status is DND while an hour.
+(banpe default set time is an hour.)
+
+    sh banpe.sh 1
+
+Additionally, you can write this, if you set 30 minutes.
+
+    sh banpe.sh 30
+
+    * If arg <  10, the unit of set time is hour.
+    * If arg >= 10, it is minute.
 
 TODO
 =========
