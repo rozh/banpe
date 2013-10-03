@@ -7,7 +7,7 @@ def main():
 	skype.Attach()
 	argc = len(sys.argv)
 	status = skype.CurrentUser.OnlineStatus
-	if status != "DND":
+	if argc==1 and status != "DND":
 		skype.ChangeUserStatus("DND")
 	elif argc > 1 and status == "DND":
 		skype.ChangeUserStatus("INVISIBLE")
