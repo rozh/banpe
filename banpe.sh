@@ -1,5 +1,6 @@
 #!/bin/sh
-python change_status.py
+path=${0%/*}
+python $path/change_status.py
 
 delay="1hour"
 if [ $1 ];
@@ -12,4 +13,4 @@ then
     fi
 fi
 # echo $delay
-echo 'python change_status.py 0' | at now+${delay}
+echo 'python ${path}/change_status.py 0' | at now+${delay}
