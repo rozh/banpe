@@ -10,7 +10,8 @@ def main():
 	if argc==1 and status != "DND":
 		skype.ChangeUserStatus("DND")
 	elif argc > 1 and status == "DND":
-		skype.ChangeUserStatus("INVISIBLE")
+		skype.ChangeUserStatus("ONLINE")
+		# skype.ChangeUserStatus("INVISIBLE")
 
 if __name__ == '__main__':
 	main()
